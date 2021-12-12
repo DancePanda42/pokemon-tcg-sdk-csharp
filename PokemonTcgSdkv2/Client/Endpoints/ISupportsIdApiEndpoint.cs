@@ -2,6 +2,6 @@
 {
     public interface ISupportsIdApiEndpoint<in T> : IApiEndpoint
     {
-        string IdPath();
+        string IdPath { get; }
     }
 }

@@ -2,6 +2,6 @@
 {
     public interface IApiEndpoint
     {
-        string ApiUri();
+        string ApiUri { get; }
     }
 }

@@ -68,14 +68,14 @@ namespace PokemonTcgSdkV2.Client
             if (query != null) queryStr = query.BuildQuery();
 
             return await FetchData<EnumerableApiResponse<T>, IEnumerable<T>>(
-                $"{endpoint.ApiUri()}?page={page}&q={queryStr}");
+                $"{endpoint.ApiUri}?page={page}&q={queryStr}");
         }
 
         public async Task<SingleApiResponse<T>> FetchById<T>(string id) where T : FetchableApiObject, IApiObjectWithId
         {
             var endpoint = EndpointFactory.GetApiEndpoint<T>();
 
-            return await FetchData<SingleApiResponse<T>, T>($"{endpoint.ApiUri()}/{id}");
+            return await FetchData<SingleApiResponse<T>, T>($"{endpoint.ApiUri}/{id}");
         }
     }
 }

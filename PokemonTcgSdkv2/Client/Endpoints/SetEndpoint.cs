@@ -2,14 +2,8 @@
 {
     public class SetEndpoint : ISupportsIdApiEndpoint<string>
     {
-        public string ApiUri()
-        {
-            return "sets";
-        }
+        public string ApiUri => "sets";
 
-        public string IdPath()
-        {
-            return "id";
-        }
+        public string IdPath => "id";
     }
 }

@@ -2,14 +2,8 @@
 {
     public class CardEndpoint : ISupportsIdApiEndpoint<string>
     {
-        public string ApiUri()
-        {
-            return "cards";
-        }
+        public string ApiUri => "cards";
 
-        public string IdPath()
-        {
-            return "id";
-        }
+        public string IdPath => "id";
     }
 }

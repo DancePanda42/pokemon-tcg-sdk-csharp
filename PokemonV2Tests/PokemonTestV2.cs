@@ -86,7 +86,7 @@ namespace PokemonV2Tests
             var queryStr = query.BuildQuery();
 
             // reduce pageSize to ensure it will be more results than pagesize
-            var requestUri = $"{EndpointFactory.GetApiEndpoint<Card>().ApiUri()}/?pageSize=10&page=1&q={queryStr}";
+            var requestUri = $"{EndpointFactory.GetApiEndpoint<Card>().ApiUri}/?pageSize=10&page=1&q={queryStr}";
 
             var response = await Client.FetchData<EnumerableApiResponse<Card>, IEnumerable<Card>>(requestUri);
             // check response for first page and mutiple pages in total
