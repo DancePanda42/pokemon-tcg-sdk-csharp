@@ -1,17 +1,19 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>netstandard2.0;netstandard2.1;netcoreapp3.1;net48;net6</TargetFrameworks>
+    <TargetFrameworks>netstandard2.1;netcoreapp3.1;net6</TargetFrameworks>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <RootNamespace>PokemonTcgSdkV2</RootNamespace>
     <AssemblyName>PokemonTcgSdk-v2-alpha</AssemblyName>
     <PackageId>PokemonTcgSdk</PackageId>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <Version>2.0.0-alpha.0</Version>
-    <Authors>glinesbdev@gmail.com</Authors>
-    <Company>glinesbdev@gmail.com</Company>
+    <Authors></Authors>
+    <Company></Company>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
-    <Nullable>disable</Nullable>
+    <Nullable>enable</Nullable>
+    <AssemblyVersion>0.1.0.0</AssemblyVersion>
+    <FileVersion>0.1.0.0</FileVersion>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|netstandard2.1|AnyCPU'">
